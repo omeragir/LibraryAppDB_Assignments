@@ -48,7 +48,8 @@ public class BookPage extends BasePage {
     @FindBy(id = "description")
     public WebElement description;
 
-
+    @FindBy(xpath = "//h2[@id='borrowed_books']")
+    public WebElement borrowedBookNumber;
 
     public WebElement editBook(String book) {
         String xpath = "//td[3][.='" + book + "']/../td/a";
